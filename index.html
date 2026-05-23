@@ -25,7 +25,6 @@
       <button class="tab" data-tab="research">Research</button>
       <button class="tab" data-tab="education">Education</button>
       <button class="tab" data-tab="experience">Experience</button>
-      <button class="tab" data-tab="cv">CV</button>
       <button class="tab" data-tab="contact">Contact</button>
     </nav>
 
@@ -34,6 +33,11 @@
       <article class="item">
         <h3>Turning real requirements into working web systems</h3>
         <p>I enjoy working on applications where data, users, and business rules connect together. My strongest areas are C#, .NET, SQL databases, OOP, REST APIs, PHP/MySQL, Git, debugging, and learning from existing codebases.</p>
+        <ul>
+          <li>Comfortable designing CRUD modules, dashboards, authentication flows, and role-based pages.</li>
+          <li>Interested in writing maintainable code, organizing database tables clearly, and improving user workflows.</li>
+          <li>Quick learner who can adapt to new frameworks, documentation, and team coding practices.</li>
+        </ul>
       </article>
     </section>
 
@@ -47,6 +51,7 @@
           <li>Layered solution using entities, data context, repositories, MVC controllers, Razor views, and an API project.</li>
           <li>Built around relational data, role-based workflows, CRUD modules, and business process screens.</li>
           <li>Verified locally with a successful <code>dotnet build</code>.</li>
+          <li>Practiced admin-side software thinking: approvals, assignments, order tracking, payment records, and user management.</li>
         </ul>
       </article>
       <article class="item">
@@ -57,6 +62,7 @@
           <li>Implemented send money, cash out, pay bill, balance lookup, and loan request workflows.</li>
           <li>Designed database tables for users, transactions, bill providers, loan requests, and password reset tokens.</li>
           <li>Includes API endpoints and separate controllers for customer, agent, admin, auth, and security features.</li>
+          <li>Practiced payment-domain concepts such as account balance updates, transaction history, role permissions, and form validation.</li>
         </ul>
       </article>
     </section>
@@ -66,7 +72,12 @@
       <article class="item">
         <h3>Current Academic Interests</h3>
         <p>I am interested in secure web applications, digital payment workflows, database-backed systems, REST API design, data science, analytics, and machine learning fundamentals.</p>
-        <p>For Data Edge Limited's trainee role, my main learning focus is enterprise-grade .NET development, clean OOP practice, SQL query optimization, documentation, and production-style teamwork.</p>
+        <ul>
+          <li>Secure digital payment systems, transaction records, and role-based access control.</li>
+          <li>Database schema design, SQL query writing, and connecting data models to application features.</li>
+          <li>REST API structure, backend validation, clean OOP practice, and software documentation.</li>
+          <li>Data science and analytics fundamentals, especially how software systems can use data for better decisions.</li>
+        </ul>
       </article>
     </section>
 
@@ -78,6 +89,12 @@
         <p>CGPA: 3.80 | Completed Credits: 119</p>
         <p>Core strengths include programming, web technology, database systems, software engineering, data structures, and project-based development.</p>
       </article>
+      <article class="item">
+        <h3>Higher Secondary Certificate (HSC)</h3>
+        <p class="meta">Milestone College</p>
+        <p>GPA: 5.00</p>
+        <p>This academic background helped build my foundation in science, analytical thinking, discipline, and preparation for computer science studies.</p>
+      </article>
     </section>
 
     <section class="panel" id="experience">
@@ -85,24 +102,26 @@
       <article class="item">
         <h3>Fresh Graduate / Entry-Level Candidate</h3>
         <p>I do not have formal professional experience yet. My hands-on experience comes from academic and self-driven projects where I practiced full-stack workflows, database design, debugging, version control, and documentation.</p>
-      </article>
-    </section>
-
-    <section class="panel" id="cv">
-      <h2>CV & Documents</h2>
-      <article class="item">
-        <h3>Curriculum Vitae</h3>
-        <p>You can view the web version of my CV or download the Word document.</p>
-        <div class="quick-links inline-links">
-          <a href="cv.html">View CV</a>
-          <a href="docs/Rimal_Banik_CV.docx">Download CV</a>
-          <a href="docs/Rimal_Banik_Cover_Letter_Data_Edge.docx">Cover Letter</a>
-        </div>
+        <ul>
+          <li>Built academic projects with backend, database, and frontend components.</li>
+          <li>Worked with login, role separation, dashboard pages, forms, data lists, and business records.</li>
+          <li>Can read existing code, identify issues, test changes, and document what was done.</li>
+          <li>Ready for trainee-level work where learning speed, consistency, and teamwork matter.</li>
+        </ul>
       </article>
     </section>
 
     <section class="panel" id="contact">
       <h2>Contact Me</h2>
+      <article class="item">
+        <h3>Available Documents</h3>
+        <p>My CV and cover letter are available here for quick review.</p>
+        <div class="quick-links inline-links">
+          <a href="cv.html">View CV</a>
+          <a href="docs/Rimal_Banik_CV_Updated.docx">Download CV</a>
+          <a href="docs/Rimal_Banik_Cover_Letter_Data_Edge.docx">Cover Letter</a>
+        </div>
+      </article>
       <form class="contact-form" id="contactForm">
         <label>
           Visitor Email
@@ -113,7 +132,7 @@
           <textarea id="visitorMessage" rows="6" placeholder="Write your message..." required></textarea>
         </label>
         <button type="submit">Send Message</button>
-        <p class="form-note">This static form opens an email draft. No backend is required.</p>
+        <p class="form-note" id="formStatus" aria-live="polite"></p>
       </form>
     </section>
   </main>
