@@ -98,7 +98,7 @@ h3 {
 }
 
 .lead {
-  max-width: 760px;
+  max-width: 100%;
   font-size: 17px;
   color: #344054;
   overflow-wrap: anywhere;
@@ -188,10 +188,6 @@ h3 {
   min-width: 0;
 }
 
-.about-card {
-  max-width: 980px;
-}
-
 .meta {
   color: var(--muted);
   font-weight: 700;
@@ -235,7 +231,8 @@ code {
 }
 
 .contact-form {
-  max-width: 680px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .contact-form label {
@@ -289,7 +286,7 @@ code {
   }
 
   .lead {
-    max-width: 330px;
+    max-width: 100%;
     font-size: 16px;
   }
 
@@ -315,12 +312,12 @@ code {
   }
 
   .item {
-    width: calc(100vw - 36px);
+    width: 100%;
     max-width: 100%;
   }
 
   .item p,
   .item li {
-    max-width: calc(100vw - 78px);
+    max-width: 100%;
   }
 }
