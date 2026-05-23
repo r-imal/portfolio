@@ -32,17 +32,17 @@ a:hover {
 }
 
 .page {
-  width: min(1040px, calc(100% - 32px));
-  margin: 28px auto;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
   background: var(--surface);
-  border: 1px solid var(--line);
 }
 
 .intro {
   display: grid;
   grid-template-columns: 160px 1fr;
   gap: 28px;
-  padding: 34px;
+  padding: 46px clamp(24px, 7vw, 96px);
   border-bottom: 1px solid var(--line);
 }
 
@@ -141,7 +141,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 0;
-  padding: 0 34px;
+  padding: 0 clamp(24px, 7vw, 96px);
   border-bottom: 1px solid var(--line);
   background: #fbfcfd;
 }
@@ -170,7 +170,8 @@ h3 {
 
 .panel {
   display: none;
-  padding: 30px 34px 36px;
+  padding: 34px clamp(24px, 7vw, 96px) 52px;
+  overflow-x: hidden;
 }
 
 .panel.active {
@@ -178,11 +179,17 @@ h3 {
 }
 
 .item {
+  width: 100%;
   border: 1px solid var(--line);
   padding: 18px;
   margin-bottom: 16px;
   background: #ffffff;
   overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.about-card {
+  max-width: 980px;
 }
 
 .meta {
@@ -269,8 +276,6 @@ code {
   .page {
     width: 100%;
     margin: 0;
-    border-left: 0;
-    border-right: 0;
   }
 
   .intro {
@@ -310,6 +315,12 @@ code {
   }
 
   .item {
-    max-width: 330px;
+    width: calc(100vw - 36px);
+    max-width: 100%;
+  }
+
+  .item p,
+  .item li {
+    max-width: calc(100vw - 78px);
   }
 }
