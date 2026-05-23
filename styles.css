@@ -40,10 +40,11 @@ a:hover {
 
 .intro {
   display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 28px;
+  grid-template-columns: 230px 1fr;
+  gap: 36px;
   padding: 46px clamp(24px, 7vw, 96px);
   border-bottom: 1px solid var(--line);
+  align-items: center;
 }
 
 .intro > * {
@@ -51,8 +52,8 @@ a:hover {
 }
 
 .profile-photo {
-  width: 150px;
-  height: 150px;
+  width: 220px;
+  height: 220px;
   border: 1px solid var(--line);
   background: #e7f4f1;
   display: grid;
@@ -60,7 +61,7 @@ a:hover {
 }
 
 .profile-photo span {
-  font-size: 42px;
+  font-size: 64px;
   font-weight: 700;
   color: var(--accent-dark);
 }
@@ -281,8 +282,12 @@ code {
   }
 
   .profile-photo {
-    width: 128px;
-    height: 128px;
+    width: 170px;
+    height: 170px;
+  }
+
+  .profile-photo span {
+    font-size: 52px;
   }
 
   .lead {
