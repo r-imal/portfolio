@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rimal Banik | Trainee Software Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <div class="profile-photo" aria-label="Profile photo placeholder">
+        <span>RB</span>
+      </div>
+      <div>
+        <p class="eyebrow">Backend & Web Development</p>
+        <h1>Rimal Banik</h1>
+        <p class="lead">I am good at building database-driven web applications with clean backend logic, role-based workflows, and practical user interfaces.</p>
+      </div>
+    </header>
+
+    <nav class="tabs" aria-label="Portfolio sections">
+      <button class="tab active" data-tab="home">Home</button>
+      <button class="tab" data-tab="projects">Projects</button>
+      <button class="tab" data-tab="research">Research</button>
+      <button class="tab" data-tab="education">Education</button>
+      <button class="tab" data-tab="experience">Experience</button>
+      <button class="tab" data-tab="cv">CV</button>
+      <button class="tab" data-tab="contact">Contact</button>
+    </nav>
+
+    <section class="panel active" id="home">
+      <h2>What I Do Well</h2>
+      <article class="item">
+        <h3>Turning real requirements into working web systems</h3>
+        <p>I enjoy working on applications where data, users, and business rules connect together. My strongest areas are C#, .NET, SQL databases, OOP, REST APIs, PHP/MySQL, Git, debugging, and learning from existing codebases.</p>
+      </article>
+    </section>
+
+    <section class="panel" id="projects">
+      <h2>Projects</h2>
+      <article class="item">
+        <h3>Farmer to Consumer / MatirGhran Admin System</h3>
+        <p class="meta">ASP.NET Core MVC, .NET 8, Entity Framework Core, SQL Server, Razor Views</p>
+        <p>Admin-focused software with dashboard, agent approval and assignment, employee and user management, payments, orders, products, stock, customer, farmer, and agent flows.</p>
+        <ul>
+          <li>Layered solution using entities, data context, repositories, MVC controllers, Razor views, and an API project.</li>
+          <li>Built around relational data, role-based workflows, CRUD modules, and business process screens.</li>
+          <li>Verified locally with a successful <code>dotnet build</code>.</li>
+        </ul>
+      </article>
+      <article class="item">
+        <h3>Digital Payment System & Security</h3>
+        <p class="meta">PHP, MySQL/MariaDB, HTML, CSS, JavaScript</p>
+        <p>Role-based digital payment project with customer, agent, and admin areas.</p>
+        <ul>
+          <li>Implemented send money, cash out, pay bill, balance lookup, and loan request workflows.</li>
+          <li>Designed database tables for users, transactions, bill providers, loan requests, and password reset tokens.</li>
+          <li>Includes API endpoints and separate controllers for customer, agent, admin, auth, and security features.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="panel" id="research">
+      <h2>Research & Interests</h2>
+      <article class="item">
+        <h3>Current Academic Interests</h3>
+        <p>I am interested in secure web applications, digital payment workflows, database-backed systems, REST API design, data science, analytics, and machine learning fundamentals.</p>
+        <p>For Data Edge Limited's trainee role, my main learning focus is enterprise-grade .NET development, clean OOP practice, SQL query optimization, documentation, and production-style teamwork.</p>
+      </article>
+    </section>
+
+    <section class="panel" id="education">
+      <h2>Education</h2>
+      <article class="item">
+        <h3>B.Sc. in Computer Science & Engineering</h3>
+        <p class="meta">American International University-Bangladesh (AIUB)</p>
+        <p>CGPA: 3.80 | Completed Credits: 119</p>
+        <p>Core strengths include programming, web technology, database systems, software engineering, data structures, and project-based development.</p>
+      </article>
+    </section>
+
+    <section class="panel" id="experience">
+      <h2>Experience</h2>
+      <article class="item">
+        <h3>Fresh Graduate / Entry-Level Candidate</h3>
+        <p>I do not have formal professional experience yet. My hands-on experience comes from academic and self-driven projects where I practiced full-stack workflows, database design, debugging, version control, and documentation.</p>
+      </article>
+    </section>
+
+    <section class="panel" id="cv">
+      <h2>CV & Documents</h2>
+      <article class="item">
+        <h3>Curriculum Vitae</h3>
+        <p>You can view the web version of my CV or download the Word document.</p>
+        <div class="quick-links inline-links">
+          <a href="cv.html">View CV</a>
+          <a href="docs/Rimal_Banik_CV.docx">Download CV</a>
+          <a href="docs/Rimal_Banik_Cover_Letter_Data_Edge.docx">Cover Letter</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel" id="contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form" id="contactForm">
+        <label>
+          Visitor Email
+          <input type="email" id="visitorEmail" placeholder="visitor@example.com" required>
+        </label>
+        <label>
+          Message
+          <textarea id="visitorMessage" rows="6" placeholder="Write your message..." required></textarea>
+        </label>
+        <button type="submit">Send Message</button>
+        <p class="form-note">This static form opens an email draft. No backend is required.</p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
