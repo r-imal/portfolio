@@ -16,9 +16,7 @@ document.getElementById("contactForm").addEventListener("submit", (event) => {
   const visitorEmail = document.getElementById("visitorEmail").value.trim();
   const visitorMessage = document.getElementById("visitorMessage").value.trim();
   const formStatus = document.getElementById("formStatus");
-  const subject = encodeURIComponent("Portfolio message from " + visitorEmail);
-  const body = encodeURIComponent(`Visitor email: ${visitorEmail}\n\nMessage:\n${visitorMessage}`);
   formStatus.textContent = "Message sent. Thank you for contacting me.";
   event.target.reset();
-  window.location.href = `mailto:rimalbanik@gmail.com?subject=${subject}&body=${body}`;
+  console.log("Portfolio message:", { visitorEmail, visitorMessage });
 });
